@@ -13,7 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    font-family: 'Lato', sans-serif;
+    
     margin: 0;
 }
 
@@ -22,13 +22,21 @@ body {
 
 }
 
+label {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
 .movieContainer select {
     background-color: #ffffff;
-    border: 0;
+    border: none;
     border-radius: 5px;
     margin-left: 10px;
     font-size: 14px;
-    padding: 5px 15px 15px 5px;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    padding: 5px 15px;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -72,4 +80,22 @@ body {
 .showCase .seat:not(.occupied):hover{
     cursor: default;
     transform: scale(1);
+}
+
+.showCase {
+    background-color: #ff5722;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: black;
+   
+}
+small {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+footer {
+    font-family: 'Lato', sans-serif;
+
 }
