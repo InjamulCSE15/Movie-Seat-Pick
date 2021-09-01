@@ -87,13 +87,29 @@ label {
     padding: 5px 10px;
     border-radius: 5px;
     color: black;
-   
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showCase li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
 }
 small {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-weight: 600;
 }
+
+.text {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+}
+
 
 footer {
     font-family: 'Lato', sans-serif;
