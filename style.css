@@ -42,6 +42,11 @@ label {
     appearance: none;
 }
 
+.container {
+    perspective: 1000px;
+    margin-bottom: 5px
+}
+
 .seat {
     background-color: #444451;
     height: 15px;
@@ -53,6 +58,16 @@ label {
 
 .row {
     display: flex;
+}
+
+.screen {
+    background-color: #ffffff;
+    height: 80px;
+    width: 100%;
+    margin: 15px 0;
+    border-radius: 3px;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
 }
 
 .seat.selected {
@@ -98,6 +113,11 @@ label {
     align-items: center;
     margin: 0 10px;
 }
+
+.showCase li small {
+    margin-left: 3px;
+}
+
 small {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -105,13 +125,17 @@ small {
 }
 
 .text {
-    font-size: 14px;
+    margin: 5px 0;
+    font-size: 15px;
     font-weight: 600;
     font-family: 'Lato', sans-serif;
 }
 
+p.text span {
+    color: #6feaf6;
+}
 
 footer {
     font-family: 'Lato', sans-serif;
-
+    margin-top: 5%;
 }
