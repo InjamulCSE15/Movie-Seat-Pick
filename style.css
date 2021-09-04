@@ -42,6 +42,10 @@ label {
     appearance: none;
 }
 
+option {
+    font-weight: 600;
+}
+
 .container {
     perspective: 1000px;
     margin-bottom: 5px
@@ -89,7 +93,7 @@ label {
 
 .seat:not(.occupied):hover{
     cursor: pointer;
-    transform: scale(1.4);
+    transform: scale(1.3);
 }
 
 .showCase .seat:not(.occupied):hover{

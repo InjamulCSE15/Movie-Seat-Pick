@@ -6,4 +6,24 @@ const movieSelect = document.getElementById('movie');
 
 // const ticketPrice = parseInt(movieSelect.value);
 const ticketPrice = +movieSelect.value;
-console.log(ticketPrice);
+// console.log(ticketPrice);
+
+function updateSelectedCount() {
+    const selectedSeats = document.querySelectorAll('.row .seat.selected');
+    //console.log(selectedSeats);
+
+    const selectedSeatsCount = selectedSeats.length;
+    // console.log(selectedSeatsCount);
+
+    count.innerText = selectedSeatsCount;
+}
+
+container.addEventListener('click', (e) => {
+    if (e.target.classList.contains('seat') && !e.target.classList.contains('occupied')) {
+        e.target.classList.toggle('selected');
+
+        updateSelectedCount();
+
+    }
+})
+
