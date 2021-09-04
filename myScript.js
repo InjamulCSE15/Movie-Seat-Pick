@@ -16,6 +16,9 @@ function updateSelectedCount() {
     // console.log(selectedSeatsCount);
 
     count.innerText = selectedSeatsCount;
+    total.innerText = selectedSeatsCount*ticketPrice;
+
+
 }
 
 container.addEventListener('click', (e) => {
